@@ -4,6 +4,11 @@ feeds:
   - name: helloworld
     uri: https://github.com/fw876/helloworld.git
     branch: master
+  - name: luci
+    uri: https://github.com/openwrt/luci.git
+    branch: master
+include:
+  - wifi-ax
 packages:
   - luci-app-ssr-plus
   - luci-app-ddns
@@ -18,6 +23,9 @@ packages:
   - wireguard
   - luci-app-eqos
   - wireguard-tools
+  - luci-app-adguardhome
+  - adguardhome
+  - default-settings
 
 
 
